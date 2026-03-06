@@ -21,7 +21,7 @@ end
 
 save('paleta_colores.mat','paleta')
 
-% Convertir imagen indexada en secuencia de píxeles
+% 3. Convertir imagen indexada en secuencia de píxeles
 secuencia_pixeles = imagen_indexada(:);
 
 if length(secuencia_pixeles) == (filas*columnas)
@@ -30,7 +30,7 @@ else
     fprintf('Advertencia: La longitud de la secuencia de píxeles no coincide con el tamaño de la imagen.\n');
 end
 
-% Convertir índices a binario (8 bits por píxel)
+% 4. Convertir índices a binario (8 bits por píxel)
 binario_pixeles = de2bi(secuencia_pixeles,8,'left-msb');
 
 % Convertir matriz binaria en secuencia serial
@@ -44,4 +44,3 @@ if num_bits == (filas*columnas*8)
 else
     fprintf('Advertencia: La longitud de la secuencia de píxeles no coincide con el tamaño esperado');
 end
-

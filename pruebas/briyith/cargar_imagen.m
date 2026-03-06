@@ -29,4 +29,3 @@ if length(secuencia_pixeles) == (filas*columnas)
 else
     fprintf('Advertencia: La longitud de la secuencia de píxeles no coincide con el tamaño de la imagen.\n');
 end
-

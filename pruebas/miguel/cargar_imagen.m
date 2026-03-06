@@ -44,4 +44,3 @@ if num_bits == (filas*columnas*8)
 else
     fprintf('Advertencia: La longitud de la secuencia de píxeles no coincide con el tamaño esperado');
 end
-

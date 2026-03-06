@@ -15,4 +15,3 @@ if columnas < 740 || filas < 492
 else
     fprintf('Tamaño cumple el mínimo requerido: %d x %d ✓\n', columnas, filas);
 end
-

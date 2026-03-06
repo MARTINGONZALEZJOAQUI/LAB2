@@ -21,7 +21,7 @@ end
 
 save('paleta_colores.mat','paleta')
 
-% Convertir imagen indexada en secuencia de píxeles
+% 3. Convertir imagen indexada en secuencia de píxeles
 secuencia_pixeles = imagen_indexada(:);
 
 if length(secuencia_pixeles) == (filas*columnas)

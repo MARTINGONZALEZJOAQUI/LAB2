@@ -55,4 +55,3 @@ fprintf('imagen    -> [%d x %d x 3] uint8\n', filas, columnas);
 fprintf('matriz_R  -> [%d x %d] double\n', filas, columnas);
 fprintf('matriz_G  -> [%d x %d] double\n', filas, columnas);
 fprintf('matriz_B  -> [%d x %d] double\n', filas, columnas);
-fprintf('\nListo para Simulink ✓\n');

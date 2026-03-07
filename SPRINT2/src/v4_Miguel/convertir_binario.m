@@ -13,11 +13,9 @@ function secuencia_binaria = convertir_binario(secuencia_pixeles, filas, columna
 
     % Verificar tamaño
     num_bits = length(secuencia_binaria);
-    if num_bits == (filas * columnas * 8)
-        fprintf('Conversión a binario completada \n');
-        fprintf('Número total de bits: %d\n', num_bits);
-    else
-        fprintf('Advertencia: La longitud no coincide con el tamaño esperado.\n');
+    if num_bits ~= (filas * columnas * 8)
+        longitud_real = filas * columnas * 8;
+        secuencia_binaria = secuencia_binaria(0:longitud_real);
     end
 
 end

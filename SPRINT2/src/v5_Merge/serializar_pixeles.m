@@ -8,11 +8,9 @@ function secuencia_pixeles = serializar_pixeles(imagen_indexada, filas, columnas
     secuencia_pixeles = imagen_indexada(:);
 
     % Verificar longitud esperada
-    if length(secuencia_pixeles) == (filas * columnas)
-        fprintf('Secuencia de píxeles serializada \n');
-        fprintf('Longitud esperada: %d \n', length(secuencia_pixeles));
-    else
-        fprintf('Advertencia: La longitud no coincide con el tamaño de la imagen.\n');
+    if length(secuencia_pixeles) ~= (filas * columnas)
+        longitud_real = filas * columnas;
+        secuencia_pixeles = secuencia_pixeles(0:longitud_real);
     end
 
 end

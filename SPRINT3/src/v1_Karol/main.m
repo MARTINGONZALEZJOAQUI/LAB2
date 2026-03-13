@@ -1,4 +1,4 @@
-% MAIN - Archivo principal del transmisor Sprint 2
+% MAIN - Archivo principal del transmisor
 
 % ── Función 1 Cargar imagen ──────────────────────────────
 [imagen, filas, columnas, canales] = cargar_imagen('italy.jpg');
